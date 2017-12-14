@@ -59,7 +59,7 @@ $(document).ready(function() {
     })
 
     $('#finish').click(function(){
-        $('section, .modal').hide();
+        $('section').hide();
         $('#end').show();
     });
 
