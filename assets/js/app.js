@@ -47,10 +47,33 @@ $(document).ready(function() {
         }
     });
 
+    $('input:checkbox').change(
+    function(){
+        if ($(this).is(':checked')) {
+            if ($('#name, #email').hasClass('valid')){
+                $('#finish').removeClass('disabled');
+            }
+        } else {
+            $('#finish').addClass('disabled');
+        }
+    })
+
+    $('#finish').click(function(){
+        $('section, .modal').hide();
+        $('#end').show();
+    });
+
+
  });
 
- $(function(){
-   setTimeout(function() {
-      $('#splash').fadeOut(500);
-  }, 2000);
+ $('#end').click(function() {
+     $('#end').fadeOut(500);
+     location.reload();
+ });
+
+$(function(){
+    setTimeout(function() {
+        $('#splash').fadeOut(500);
+    }, 2000);
+
 });

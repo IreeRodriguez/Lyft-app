@@ -2,7 +2,7 @@ body{
 	background-color: #eeeeee;
 	text-align: center;
 }
-#splash {
+#splash, #end {
     position:absolute;
     top:0;
     left:0;
@@ -11,7 +11,7 @@ body{
     background: linear-gradient(#76278F, #2B1E66);
 	z-index: 99;
 }
-#splash img{
+#splash img, #end img{
 	width: 50%;
 	padding-top: 50%;
 	vertical-align: middle;
@@ -52,4 +52,7 @@ input::-webkit-inner-spin-button {
 }
 .next{
 	background-color: #FF00BF !important;
+}
+#end{
+	display: none;
 }
