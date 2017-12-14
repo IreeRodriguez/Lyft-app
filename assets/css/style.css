@@ -1,0 +1,55 @@
+body{
+	background-color: #eeeeee;
+	text-align: center;
+}
+#splash {
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:100%;
+    background: linear-gradient(#76278F, #2B1E66);
+	z-index: 99;
+}
+#splash img{
+	width: 50%;
+	padding-top: 50%;
+	vertical-align: middle;
+}
+header {
+	background-image: url(https://i.pinimg.com/736x/3b/d5/7a/3bd57a57da934c936d9c672cca3e7b5a--cityscape-photography-city-streets.jpg);
+	background-size: cover;
+
+	height:  100vh;
+  	display: flex;
+  	flex-flow: column;
+  	justify-content: flex-end;
+	padding: 2em;
+}
+.logo img{
+	width: 30%;
+}
+.back{
+	color: #FF00BF !important;
+}
+a img{
+	height: 1.5em !important;
+	padding-top:  0.5em;
+}
+input[type='number'] {
+  -moz-appearance:textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.input-field{
+	margin-bottom: 2em;
+}
+.sign, .verify{
+	display: none;
+}
+.next{
+	background-color: #FF00BF !important;
+}

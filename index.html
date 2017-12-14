@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Lyft</title>
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    </head>
+    <body>
+        <!-- <div id="splash">
+            <center><img src="assets/img/logo-white.png"></center>
+        </div> -->
+        <header id="intro">
+            <div class="logo">
+                <img src="assets/img/logo-pink.png">
+
+            </div>
+            <div>
+                <a class="transparent waves-effect waves-light btn-large">LOG IN</a>
+                <a id="signUp" class="transparent waves-effect waves-light btn-large">SIGN UP</a>
+            </div>
+        </header>
+        <section class="sign">
+            <nav class="transparent">
+                <div class="nav-wrapper">
+                    <a href="#"><i id="signBack" class="back left material-icons">arrow_back</i></a>
+                    <a href="#" class="brand-logo center">
+                        <img class="responsive-img" src="assets/img/logo-pink.png"></a>
+                </div>
+            </nav>
+            <div class="row container">
+                <div class="col s12">
+                    <h4>Sing Up</h4>
+                    <p>Join now for free ride credit</p>
+                </div>
+            </div>
+            <div class="row container">
+                <div class="input-field col s4">
+                    <select>
+                        <option value="" disabled selected>Country</option>
+                        <option value="1" data-icon="assets/img/flags/cl.svg" class="left">Chile</option>
+                        <option value="2" data-icon="assets/img/flags/ar.svg" class="left">Argentina</option>
+                        <option value="3" data-icon="assets/img/flags/co.svg" class="left">Colombia</option>
+                        <option value="4" data-icon="assets/img/flags/us.svg" class="left">US</option>
+                    </select>
+                </div>
+                <div class="input-field col s8">
+                    <input id="input_text" type="number" data-length="10">
+                    <label for="input_number" data-error="10 digit phone number" data-success="right">Phone Number</label>
+                </div>
+                <p>We'll send you a text to verify your phone</p>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <a id="signNext" class=" next waves-effect waves-light btn-large disabled modal-trigger" href="#modalCode">SIGN UP</a>
+                </div>
+                <div id="modalCode" class="modal">
+                    <div class="modal-content">
+                        <h4>Your Validation Code</h4>
+                        <p id="code"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <a id="acceptCode" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Accept</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="verify">
+            <nav class="transparent">
+                <div class="nav-wrapper">
+                    <a href="#"><i id="verifyBack" class=" back left material-icons">arrow_back</i></a>
+                    <a href="#" class="brand-logo center">
+                        <img class="responsive-img" src="assets/img/logo-pink.png"></a>
+                </div>
+            </nav>
+            <div class="row container">
+                <div class="col s12">
+                    <h4>Verify your code</h4>
+                </div>
+            </div>
+            <div class="row container">
+                <div class="input-field col s6 offset-s3">
+                    <input id="input_code" type="number" data-length="4">
+                    <label for="input_number" data-error="4 digit code" data-success="right">Validation Code</label>
+                </div>
+            </div>
+            <div class="row container">
+                <div class="col s12">
+                    <a id="validate" class=" next waves-effect waves-light btn-large disabled modal-trigger" href="#profile">NEXT</a>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script src="assets/js/app.js"></script>
+        <script type="text/javascript" src="https://use.fontawesome.com/7873633050.js"></script>
+    </body>
+</html>
